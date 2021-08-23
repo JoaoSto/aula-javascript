@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <a href="#" class="brand">Logo</a>
+        <div class="toggle"></div>
+      </nav>
+
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="text-container">
+          <div class="text">
+            <h1>Hello World!</h1>
+            <h2>maybe not for you <strong> JS</strong>.</h2>
+          </div>
+        </div>
+
+        <video src="./images/bg.mp4" mute autoplay loop></video>
+      </div>
+
+      <div class="outro">
+        <h1>Lorem Ipsum</h1>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          vel officia exercitationem ipsum nam iste ad, architecto, recusandae
+          odit asperiores aperiam iure nemo veritatis. Quia architecto
+          consectetur consequatur earum eligendi voluptates eos est. Sit
+          eligendi tenetur neque fugit, laborum debitis veniam praesentium
+          quia odio sunt magnam nulla aut a repudiandae. Beatae ratione
+          voluptas, dolorem consequatur odio asperiores aliquid mollitia?
+          Doloribus asperiores aperiam eligendi. Quasi consequatur ea
+          praesentium error hic officiis illum, sint quis? Ducimus aut
+          consequatur aliquid temporibus facere. Quis consectetur quae,
+          laboriosam vitae quod architecto molestias consequuntur illo sequi
+          quaerat. Deserunt blanditiis necessitatibus nesciunt. Corrupti, qui.
+          Amet culpa, ipsam, voluptas cum, sed natus numquam fugit praesentium
+          asperiores officiis odio velit consectetur non accusamus repellendus
+          doloremque quis debitis porro nobis dicta doloribus quod expedita.
+          Cumque delectus molestias quaerat suscipit iure culpa provident non
+          doloribus rem exercitationem hic voluptatibus praesentium tempore
+          blanditiis at sed facilis incidunt, dolorum quos laboriosam odit
+          iste vero tempora necessitatibus. Possimus cumque corporis quis
+          dignissimos ab. Minima repellat eveniet explicabo optio earum
+          dignissimos magnam ducimus, reprehenderit, ea illo mollitia eius eos
+          voluptatum omnis sit cum sint iste amet quia dicta fugit culpa
+          delectus error autem! Magni recusandae eligendi voluptatibus atque
+          dignissimos, consequatur exercitationem doloremque sunt, deserunt
+          asperiores a, quaerat tempora pariatur? Quos enim cumque ullam
+          maxime quas accusantium consequuntur nostrum dolores distinctio
+          repellat temporibus praesentium ipsum, eaque aut sed error animi
+          unde delectus obcaecati, et ratione! Deleniti numquam ullam nisi eum
+          maxime distinctio provident unde nostrum natus cupiditate soluta
+          nesciunt pariatur rem magnam tempore vitae quisquam obcaecati, eaque
+          autem minus error harum impedit fugiat. Perferendis, provident! Rem,
+          consequatur voluptates iste hic facere autem esse, rerum sunt
+          perspiciatis eius, asperiores aliquam inventore! Tempora quis
+          dolorem labore totam consequatur nulla unde ducimus voluptatem, iure
+          molestiae ad illo nemo. Error ipsa fuga consequatur, praesentium
+          nihil hic doloribus molestias sequi velit alias maiores. Quos est
+          accusamus omnis facilis nostrum sed, consequatur aperiam? Nulla rem
+          reprehenderit fuga, quae est beatae eligendi molestiae ipsam nemo
+          natus dolor, magni sunt dicta expedita voluptate quos, enim
+          recusandae provident! Inventore reprehenderit dolore enim. Modi
+          molestiae sint quibusdam incidunt eligendi provident qui unde
+          maiores reprehenderit odio dolorem corrupti, eaque sit repellendus
+          doloribus libero eum? Nulla magnam aliquam quam dolore, distinctio
+          officiis, rem fugit incidunt amet sit illum, sint non sed magni.
+          Corrupti necessitatibus et alias, veniam harum natus. Asperiores
+          earum animi quam soluta et nobis sit, atque, sapiente, similique
+          expedita sequi molestias iure illo consectetur officiis vitae at
+          repudiandae inventore quo obcaecati voluptas nostrum accusamus
+          provident. Necessitatibus nesciunt reiciendis, maxime velit, quam
+          sint nihil illo consequatur, magni amet cumque tempora quasi.
+          Laborum ullam ipsum quaerat sapiente. Sapiente provident illo enim
+          laboriosam necessitatibus beatae numquam accusantium voluptate,
+          repellendus pariatur quis dicta error vero dolorem ab odit omnis
+          assumenda voluptatibus ut expedita fugit suscipit tempore mollitia.
+          Ullam ducimus tempora perspiciatis voluptatem porro aperiam eos
+          voluptates. Est iste, officia quaerat rem voluptates possimus
+          asperiores ipsam eum provident harum quod commodi quis dicta,
+          molestiae eius architecto debitis necessitatibus ipsum, nesciunt
+          deserunt eveniet similique modi. Aspernatur modi ipsa fuga
+          dignissimos, quisquam deserunt?
+        </p>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="menu-titulo">
+        <h2>Menu</h2>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#">Menu Item</a>
+        </li>
+
+        <li>
+          <a href="#">Menu Item</a>
+        </li>
+
+        <li>
+          <a href="#">Menu Item</a>
+        </li>
+      </ul>
+
+      <div class="fechar">
+        <div class="toggle-fechar"></div>
+      </div>
+
+      
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      const menuToggle = document.querySelector(".toggle");
+      const menu = document.querySelector(".menu");
+      const overlay = document.querySelector(".overlay");
+
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+        overlay.classList.toggle("active");
+      });
+
+      const fechar = document.querySelector(".fechar");
+
+      fechar.addEventListener("click", function () {
+        menu.classList.remove("active");
+        menuToggle.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    </script>
+
+  </body>
+</html>
