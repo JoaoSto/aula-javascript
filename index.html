@@ -16,15 +16,24 @@
       </nav>
 
       <div class="overlay"></div>
+
       <div class="container">
         <div class="text-container">
           <div class="text">
             <h1>Hello World!</h1>
-            <h2>maybe not for you <strong> JS</strong>.</h2>
+            <h2 id="texto_mensagem">maybe not for you <strong> JS</strong>.</h2>
+
+            <div class="botoes">
+              <button type="button" class="home-btn" onclick="mensagem1()">Mensagem 1</button>
+              <button type="button" class="home-btn" onclick="mensagem2()">Mensagem 2</button>
+              <button type="button" class="home-btn" onclick="back1()">Background 1</button>
+              <button type="button" class="home-btn" onclick="back2()">Background 2</button>
+            </div>
           </div>
         </div>
 
-        <video src="./images/bg.mp4" mute autoplay loop></video>
+          <video id="video-bg" src="./images/bg.mp4" mute autoplay loop></video>
+
       </div>
 
       <div class="outro">
@@ -118,10 +127,10 @@
         <div class="toggle-fechar"></div>
       </div>
 
-      
     </div>
 
     <script>
+
       window.addEventListener("scroll", function () {
         var nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 0);
@@ -144,6 +153,7 @@
         menuToggle.classList.remove("active");
         overlay.classList.remove("active");
       });
+
     </script>
 
   </body>

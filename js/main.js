@@ -65,3 +65,56 @@
 // alert(d.getMonth());
 
 //-------------------------------------------------
+
+// function soma(n1, n2){
+//     return n1 + n2;
+// }
+
+// alert(soma(5, 10));
+
+//-------------------------------------------------
+
+// function validaIdade(idade){
+//     var validar = true;
+    
+//     if(idade >= 18){
+//         validar = true;
+//     }
+//     else{
+//         validar = false;
+//     }
+
+//     return validar;
+
+// }
+
+// var idade = prompt("Qual sua idade");
+// console.log(validaIdade(idade));
+
+//-------------------------------------------------
+
+function botao(){
+    alert("Você clicou em um botão!");
+}
+
+function mensagem1(){
+    document.getElementById("texto_mensagem").innerHTML = "maybe not for you <strong> JS</strong>.";
+    // console.log(document.getElementById("mensagem"));
+}
+
+function mensagem2(){
+    document.getElementById("texto_mensagem").innerHTML = "for you too <strong>JS</strong>.";
+    // console.log(document.getElementById("mensagem"));
+}
+
+function back1(){
+    document.getElementById("video-bg").outerHTML = '<video id="video-bg" src="./images/bg.mp4" mute autoplay loop></video>';
+
+    console.log(document.getElementById("video-bg"));
+}
+
+function back2(){
+    document.getElementById("video-bg").outerHTML = '<video id="video-bg" src="./images/gltich.mp4" mute autoplay loop></video>';
+
+    console.log(document.getElementById("video-bg"));
+}
